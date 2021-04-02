@@ -1,0 +1,20 @@
+retrieve running apps
+approximate location (network-based)
+precise location (GPS and network-based)
+access extra location provider commands
+read phone status and identity
+access USB storage filesystem
+view Wi-Fi connections
+read phone status and identity
+view network connections
+pair with Bluetooth devices
+access Bluetooth settings
+change network connectivity
+connect and disconnect from Wi-Fi
+full network access
+run at startup
+control vibration
+prevent device from sleeping
+modify system settings
+update component usage statistics
+close other apps
