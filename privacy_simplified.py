@@ -1,30 +1,4 @@
 
-#####################################################################
-#                                                                   #
-#                   Problems in Code so Far                         #
-#                                                                   #
-# - Add names and App IDs to common_apk_module (252 as of now)      #
-# - Potentially add select background feature (appearence page)     #
-# - Determine Criteria for scoring                                  #
-# - Get rid of extra results in popular apps                        #
-#    - popular apps has multiple apps                               #
-#    - App Versions listed                                          #
-#                                                                   #
-#####################################################################
-#                                                                   #
-#                  Important Notes/Evoulutions                      #
-#                                                                   #
-# - Changes app Grade so, each point category is weighted           #
-#   accordingly e.g. A=0-20, B=21-40, C=41-60, D=61-80, F=81-100    #
-#         - Currently, A=0-59, B=60-69, C=70-79, D=80-89, F=90-100  #
-#                                                                   #
-# - SPAM PREVENTION SEARCH MESSAGE - Application is spam preventive #
-#   because of string comparison of app versions therefore, even    #
-#   with no number there is no oppurtunity unless new app version   #
-#   is released                                                     #
-#                                                                   #
-#####################################################################
-
 # Modules used
 from setup import *                     # Used for checking module installation
 test_setup()                            # Runs the script for setup
@@ -151,128 +125,6 @@ def delete_landing_page_canvas_function():
     my_canvas.delete(privacy_button_window)
     my_canvas.delete(about_us_button_window)
 
-'''
-########################################################################################################
-# GUI Application Module for Deleting Popular Apps Page Canvas                                         #
-########################################################################################################
-
-def delete_popular_apps_page_canvas_function():
-    
-    global app_name_window, popular_apps_window, rectangle_filled_popular_apps, app_grade_window, listbox_name, listbox_grade
-    
-    my_canvas.delete(app_name_window)
-    my_canvas.delete(popular_apps_window)
-    my_canvas.delete(rectangle_filled_popular_apps)
-    my_canvas.delete(app_grade_window)
-
-    listbox_name.place(x=1000,y=1000)
-    listbox_grade.place(x=1000,y=1000)
-
-########################################################################################################
-# GUI Application Module for Deleting Settings Page Canvas                                             #
-########################################################################################################
-
-def delete_settings_page_canvas_function():
-    
-    global settings_window, notifications_button_window, appearence_button_window, privacy_button_window
-    
-    my_canvas.delete(settings_window)
-    my_canvas.delete(notifications_button_window)
-    my_canvas.delete(appearence_button_window)
-    my_canvas.delete(privacy_button_window)
-
-########################################################################################################
-# GUI Application Module for Deleting Notifications Page Canvas                                        #
-########################################################################################################
-
-def delete_notifications_page_canvas_function():
-    global notifications_window
-    
-    my_canvas.delete(notifications_window)
-
-########################################################################################################
-# GUI Application Module for Deleting Appearence Page Canvas                                           #
-########################################################################################################
-
-def delete_appearence_page_canvas_function(): 
-    global appearence_window
-    
-    my_canvas.delete(appearence_window)
-
-########################################################################################################
-# GUI Application Module for Deleting Privacy Page Canvas                                              #
-########################################################################################################
-
-def delete_privacy_page_canvas_function():
-
-    global privacy_window, privacy_frame
-        
-    my_canvas.delete(privacy_window)
-    
-    privacy_frame.place(x=1000,y=1000)
-
-########################################################################################################
-# GUI Application Module for Deleting About Us Page Canvas                                             #
-########################################################################################################
-
-def delete_about_us_page_canvas_function():
-    
-    global about_us_window, about_us_frame
-   
-    my_canvas.delete(about_us_window)
-    
-    about_us_frame_frame.place(x=1000,y=1000)
-
-########################################################################################################
-# GUI Application Module for View Details Page Canvas                                                  #
-########################################################################################################
-
-def delete_view_details_page_canvas_function():
-    
-    global listbox_criteria, listbox_points, rectangle_filled_details, criteria, points
-
-    my_canvas.delete(rectangle_filled_details)
-    my_canvas.delete(criteria)
-    my_canvas.delete(points)
-
-    listbox_criteria.place(x=1000,y=1000)
-    listbox_points.place(x=1000,y=1000)
-
-########################################################################################################
-# GUI Application Module for App Score Page Canvas                                                     #
-########################################################################################################
-
-def delete_app_score_page_canvas_function():
-    
-    global canvas_filled_app_score_text, canvas_filled_app_score
-
-    my_canvas.delete(canvas_filled_app_score_text)
-    my_canvas.delete(canvas_filled_app_score)
-
-########################################################################################################
-# GUI Application Module for Display App Result Page Canvas                                            #
-########################################################################################################
-
-def delete_display_app_result_page_canvas_function():
-    
-    global rectangle_filled_details, view_details_page_button_window, app_grade_canvas
-
-    my_canvas.delete(rectangle_filled_details)
-    my_canvas.delete(view_details_page_button_window)
-    my_canvas.delete(app_grade_canvas)
-
-########################################################################################################
-# GUI Application Module for  App Result Page Canvas                                                   #
-########################################################################################################
-
-def delete_app_result_page_canvas_function():
-
-    global app_result_window
-    
-    my_canvas.delete(app_result_window)
-
-'''
-
 ########################################################################################################
 # Converts app score to app grade                                                                      #
 ########################################################################################################
@@ -291,22 +143,6 @@ def app_grade_function(app_score):
     else:
         app_grade = "?"
     return app_grade
-    
-    '''
-    if (app_score >= 80): 
-        app_grade = "F"
-    elif (app_score >= 60):
-        app_grade = "D"
-    elif (app_score >= 40):
-        app_grade = "C"
-    elif (app_score >= 20):
-        app_grade = "B"
-    elif (app_score >= 0):
-        app_grade = "A"
-    else:
-        app_grade = "?"
-    return app_grade
-    '''
 
 ########################################################################################################
 # Displays additional details i.e. criteria and points                                                 #
@@ -789,10 +625,10 @@ def settings_page():
     # delete_privacy_page_canvas_function()
     
     settings_window = my_canvas.create_text(220, 178, text="Settings", font=("Times", 14), fill="white")
-                                                                                                                              ######################
-    notifications_button = Button(root, bg="#C7E6E4", text="Notifications", command=notifications_page)                       # !!! UPDATE NOW !!! #
-    appearence_button = Button(root, bg="#C7E6E4", text="Appearence", command=appearence_page)                                # !!! UPDATE NOW !!! #
-    privacy_button = Button(root, bg="#C7E6E4", text="Privacy", command=privacy_page)                                         ######################
+                                                                                                                            
+    notifications_button = Button(root, bg="#C7E6E4", text="Notifications", command=notifications_page)                    
+    appearence_button = Button(root, bg="#C7E6E4", text="Appearence", command=appearence_page)                              
+    privacy_button = Button(root, bg="#C7E6E4", text="Privacy", command=privacy_page)                                         
 
     notifications_button_window = my_canvas.create_window(180, 240, anchor="nw", window=notifications_button)
     appearence_button_window = my_canvas.create_window(180, 280, anchor="nw", window=appearence_button)
@@ -810,9 +646,6 @@ def privacy_page():
     # delete_settings_page_canvas_function()
 
     privacy_window = my_canvas.create_text(220, 178, text="Privacy", font=("Times", 14), fill="white")
-
-    # Based off of https://stackoverflow.com/questions/7727804/tkinter-using-scrollbars-on-a-canvas
-
     root.configure(background="#808000")
     privacy_frame = Frame(root, width=80, height=80, bg = '#ffffff', borderwidth=3, relief="sunken")
     scrollbar = Scrollbar(privacy_frame) 
@@ -849,13 +682,8 @@ def about_us_page():
     scrollbar.config(command=edit_area.yview)
     scrollbar.pack(side="right", fill="y")
     edit_area.pack(side="left", fill="both", expand=True)
-    
-
-    ##################################################################
-    # !!! UPDATE LINE BELOW FOR ABOUT US FRAME AS IT IS NOT GOOD !!! #
-    ##################################################################
-    
-    edit_area.insert(INSERT, """You know you really must be quite bored if you are reading this. Anyways if you are Brandon Nepute THANK YOU SO VERY MUCH as you have been a huge contributor to this project. As life would have it (and capitalist pigs would as well) he got Zukerberg'd out of this so, guess I am good ol'd Marky. Whether that is for better or for worse only time will tell. For we go on into the future as the future becomes the present and the present becomes the past. (Totally not ripping off F. Scott Fitzgerald's Last line of The Grinch who stole Christmas oh wait I mean The Great Gatsby)""")
+        
+    edit_area.insert(INSERT, """This is the Python GUI proof of concept for Privacy Simplified for Andrew Sprengelmeyer's CI475 Thesis""")
     about_us_frame.place(x=115,y=250)
     
 ########################################################################################################
