@@ -1,0 +1,155 @@
+take pictures and videos,3
+view Wi-Fi connection,3
+retrieve running apps,15
+read your Web bookmarks and history,10
+read phone status and identity,15
+read the contents of your USB storage,5
+modify or delete the contents of your USB storage,15
+modify your contacts,10
+find accounts on the device,5
+read your contacts,5
+change/intercept network settings and traffic,7
+read your own contact card,5
+add or remove accounts,3
+precise location (GPS and network-based),10
+approximate location (network-based),5
+directly call any phone numbers,3
+directly call phone numbers,3
+read call log,15
+record audio,15
+read calendar events plus confidential information,15
+add or modify calendar events and send email to guests without owners' knowledge,15
+read your text messages (SMS or MMS),15
+send SMS messages,3
+edit your text messages (SMS or MMS),5
+choose widgets,5
+Hotword detection,15
+provide an in-call user experience,5
+download files without notification,10
+interact across users,5
+manage preferences and permissions for USB devices,5
+manage voice keyphrases,1
+control media playback and metadata access,5
+Audio Routing,1
+update component usage statistics,1
+adjust your wallpaper size,1
+prevent app switches,10
+Preload results,10
+receive data from Internet,1
+Permission to write Sound Search matches,3
+view configured accounts,10
+contacts data in Google accounts,15
+Read Google settings,15
+Modify Google settings,10
+allow Bluetooth pairing by Application,3
+modify secure system settings,5
+full network access,10
+change network connectivity,3
+set an alarm,1
+view network connections,3
+prevent device from sleeping,3
+change your audio settings,1
+install shortcuts,5
+control flashlight,1
+access Bluetooth settings,1
+read sync settings,5
+set wallpaper,1
+send sticky broadcast,5
+control Near Field Communication,3
+expand/collapse status bar,1
+allow Wi-Fi Multicast reception,1
+draw over other apps,3
+control vibration,1
+read Google service configuration,1
+pair with Bluetooth devices,1
+run at startup,1
+modify system settings,10
+connect and disconnect from Wi-Fi,3
+measure app storage space,1
+use accounts on the device,10
+write web bookmarks and history,5
+create accounts and set passwords,15
+view Wi-Fi connections,5
+read historical network usage,15
+toggle sync on and off,15
+read Home settings and shortcuts,10
+send package removed broadcast,1
+Google Play license check,1
+access USB storage filesystem,1
+read TV channel/program information,1
+write TV channel/program information,3
+force device reboot,10
+manage users,15
+add or remove a device admin,15
+delete apps,15
+close other apps,10
+full license to interact across users,15
+delete all app cache data,15
+reset system to factory defaults,15
+read battery statistics,3
+delete other apps' caches,5
+read sensitive log data,15
+reorder running apps,7
+uninstall shortcuts,15
+receive text messages (SMS),5
+read sync statistics,10
+read terms you added to the dictionary,7
+add words to user-defined dictionary,7
+write call log,7
+write subscribed feeds,10
+read subscribed feeds,7
+access other Google services,3
+access all Google services,3
+receive text messages (MMS),3
+disable your screen lock,1
+modify/delete internal media storage contents,15
+act as the AccountManagerService,15
+run the application's scheduled background work,7
+Modify Google service configuration,10
+YouTube usernames,1
+Broadcast data messages to apps,10
+change screen orientation,1
+read frame buffer,5
+get current app info,5
+change system display settings,10
+access extra location provider commands,15
+receive text messages (WAP),3
+manage document storage,1
+bind to a wallpaper,1
+modify app ops statistics,10
+interact with a device admin,15
+retrieve system internal state,7
+enable or disable app components,15
+modify your own contact card,7
+invoke the carrier-provided configuration app,5
+power device on or off,5
+erase USB storage,15
+delete other apps' data,15
+Control displaying and hiding keyguard,3
+press keys and control buttons,3
+Read email attachments,10
+disable or modify status bar,5
+read your social stream,10
+Access email provider data,10
+Access all system downloads,10
+configure Wifi displays,5
+send respond-via-message events,5
+body sensors (like heart rate monitors),10
+send SMS-received broadcast,10
+manage activity stacks,7
+directly install apps,10
+display unauthorized windows,10
+set preferred apps,7
+Access download manager,3
+modify phone state,5
+status bar,5
+write Home settings and shortcuts,7
+send WAP-PUSH-received broadcast,10
+set time zone,1
+capture audio output,10
+Change WiMAX state,7
+reroute outgoing calls,15
+connect and disconnect from WiMAX,3
+limit number of running processes,10
+make app always run,10
+write to your social stream,10
