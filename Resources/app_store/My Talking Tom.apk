@@ -1,7 +1,0 @@
-record audio
-view Wi-Fi connections
-view network connections
-full network access
-run at startup
-prevent device from sleeping
-receive data from Internet
