@@ -706,24 +706,6 @@ def landing_page():
     settings_button_window = my_canvas.create_window(180, 280, anchor="nw", window=settings_button)
     privacy_button_window = my_canvas.create_window(180, 320, anchor="nw", window=privacy_button)
     about_us_button_window = my_canvas.create_window(180, 360, anchor="nw", window=about_us_button)
-    
-    # Before Search Query
-    '''
-    delete_popular_apps_page_canvas_function()
-    delete_settings_page_canvas_function()
-    delete_appearence_page_canvas_function()
-    delete_notifications_page_canvas_function()
-    delete_privacy_page_canvas_function()
-    delete_about_us_page_canvas_function()
-    '''
-    
-    #After Search Query
-    '''
-    delete_view_details_page_canvas_function()
-    delete_app_score_page_canvas_function()
-    delete_display_app_result_page_canvas_function()
-    delete_app_result_page_canvas_function()
-    '''
 
 # Starts the Program
 landing_page()
