@@ -130,15 +130,15 @@ def delete_landing_page_canvas_function():
 ########################################################################################################
 
 def app_grade_function(app_score):
-    if (app_score >= 94.00): 
+    if (app_score >= 421): 
         app_grade = "F"
-    elif (app_score >= 74.00):
+    elif (app_score <= 420):
         app_grade = "D"
-    elif (app_score >= 54.00):
+    elif (app_score <= 315):
         app_grade = "C"
-    elif (app_score >= 34.00):
+    elif (app_score <= 210):
         app_grade = "B"
-    elif (app_score >= 14.00):
+    elif (app_score <= 105):
         app_grade = "A"
     else:
         app_grade = "?"
@@ -258,11 +258,12 @@ def display_app_score(app_score_write):
     
     delete_landing_page_canvas_function()
     
+    # NOT NECCESARY ANYMORE!!!
     # Normalize the app score
     # It is out of 1110 initially then, it gets put into a value from 0 - 114
-    app_score_write /= 10
-    app_score_write -= 100
-    app_score_write = abs(app_score_write)
+    # app_score_write /= 10
+    # app_score_write -= 100
+    # app_score_write = abs(app_score_write)
 
     # App Score printout
     canvas_filled_app_score_text = my_canvas.create_text(210, 270, text="App Score:    ", font=("Times", 14, "bold"), fill="black")
@@ -311,8 +312,9 @@ def app_score_privacy_impact_assessment(app_name_write):
         elif (first == second):
             app_score_write += 0
 
+    # NOT NECCESARY ANYMORE!!!
     # It is out of 1110 initially then, it gets put into a value from 0 - 114
-    app_score_write /= 10
+    # app_score_write /= 10
 
     return app_score_write
 
